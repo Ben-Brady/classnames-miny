@@ -1,0 +1,47 @@
+{
+  "name": "@nnilky/classnames-miny",
+  "private": false,
+  "version": "0.1.0",
+  "author": "Ben Brady",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ben-Brady/classnames-miny.git"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "default": "./dist/index.js",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./index.js": {
+      "default": "./dist/index.js",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "keywords": [
+    "css",
+    "classnames",
+    "utility"
+  ],
+  "files": [
+    "LICENSE",
+    "README.md",
+    "./dist/*.d.ts",
+    "./dist/*.js.map",
+    "./dist/*.js"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "publish": "npm publish --access=public"
+  },
+  "devDependencies": {
+    "typescript": "~5.8.3"
+  }
+}
